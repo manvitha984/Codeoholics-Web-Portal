@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Ticket</title>
+    <link rel="stylesheet" href="tstyle.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="https://media.licdn.com/dms/image/D560BAQFs8jcqNSz0MQ/company-logo_200_200/0/1683385398554?e=2147483647&v=beta&t=Vxw5Erx4dyWuxOIWPZ4lvDPaHJdpqWemRVDJ87WdAf4" alt="Codeoholics Logo">
+            </div>
+
+            <div class="user-actions">
+                <a href="login.php">Login</a>
+                <a href="signup.php">Sign Up</a>
+            </div>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="help.html">Help</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="t"><h1>Support Ticket</h1></section>
+    
+    <form action="submit_ticket.php" method="post">
+        <label for="name">Your Name:</label>
+        <input type="text" name="name" id="name" required><br>
+
+        <label for="email">Your Email:</label>
+        <input type="email" name="email" id="email" required><br>
+
+        <label for="subject">Subject:</label>
+        <input type="text" name="subject" id="subject" required><br>
+
+        <label for="message">Message:</label>
+        <textarea name="message" id="message" rows="4" required></textarea><br>
+
+        <input type="submit" value="Submit Ticket">
+    </form>
+
+    <footer>
+        <section class="bottom-box">
+            <div class="social-links column">
+                <h2>Socials</h2>
+                <p> <a href="https://www.linkedin.com/company/codeoholics-club-cmrtc/">LinkedIn</a> | <a href="https://www.instagram.com/codeoholics/">Instagram</a> | <a href="https://discord.gg/rbq6gQWx">Discord</a></p>
+            </div>
+        </section>
+        
+        <p>&copy; 2023 Codeoholics</p>
+    </footer>
+</body>
+</html>

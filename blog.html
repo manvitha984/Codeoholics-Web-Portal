@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="bstyle.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="https://media.licdn.com/dms/image/D560BAQFs8jcqNSz0MQ/company-logo_200_200/0/1683385398554?e=2147483647&v=beta&t=Vxw5Erx4dyWuxOIWPZ4lvDPaHJdpqWemRVDJ87WdAf4" alt="Codeoholics Logo">
+            </div>
+            <div class="user-actions">
+                <a href="login.php">Login</a>
+                <a href="signup.php">Sign Up</a>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="help.html">Help</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="blog">
+            <h1>Latest Blog Posts</h1>
+            <img id ="blog" src="https://www-static.cdn-one.com/cmsimages/en_what-is-a-blog-1.png" alt="Blog" height="300" width="500">
+            <article class="blog-post1">
+                <h2>Blog Post 1</h2>
+                <p>Content of Blog Post 1 goes here.</p>
+            </article>
+            <article class="blog-post2">
+                <h2>Blog Post 2</h2>
+                <p>Content of Blog Post 2 goes here.</p>
+            </article>
+            <article class="blog-post3">
+                <h2>Blog Post 3</h2>
+                <p>Content of Blog Post 3 goes here.</p>
+            </article>
+            <article class="blog-post4">
+                <button id="create-blog-button">Create New Blog</button>
+                <p>To create a new blog</p>
+            </article>
+
+        </section>
+    </main>
+
+    <footer>
+        <section class="bottom-box">
+            <div class="social-links column">
+                <h2>Socials</h2>
+                <p> <a href="https://www.linkedin.com/company/codeoholics-club-cmrtc/">LinkedIn</a> | <a href="https://www.instagram.com/codeoholics/">Instagram</a> | <a href="https://discord.gg/rbq6gQWx">Discord</a></p>
+            </div>
+        </section>
+        
+        <p>&copy; 2023 Codeoholics</p>
+    </footer>
+
+    <script>
+        const blogSection1 = document.querySelector('.blog-post1');
+        const blogSection2 = document.querySelector('.blog-post2');
+        const blogSection3 = document.querySelector('.blog-post3');
+
+    
+        blogSection1.addEventListener('click', function () {
+            window.location.href = 'blog1.html';
+        });
+    
+        blogSection2.addEventListener('click', function () {
+            window.location.href = 'blog2.html'; 
+        });
+    
+        blogSection3.addEventListener('click', function () {
+            window.location.href = 'blog3.html'; 
+        });
+    </script>
+
+</body>
+</html>
