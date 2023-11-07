@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources</title>
+    <link rel="stylesheet" href="rstyle.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="https://media.licdn.com/dms/image/D560BAQFs8jcqNSz0MQ/company-logo_200_200/0/1683385398554?e=2147483647&v=beta&t=Vxw5Erx4dyWuxOIWPZ4lvDPaHJdpqWemRVDJ87WdAf4" alt="Codeoholics Logo">
+            </div>
+            <div class="user-actions">
+                <a href="login.php">Login</a>
+                <a href="signup.php">Sign Up</a>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="help.html">Help</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="resources">
+            <h1>Free Resources</h1>
+            <img id ="r" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBSsG_rrrgF3pGQeICezkcwmeJShPc5Cfq0Mo3HlDg081eSpspPA4Z1HVn2im6XM86XIM&usqp=CAU" alt="r" height="300" width="500">
+            <article class="r-post1">
+                <h2>Resource 1</h2>
+                <p><a href="freecodecamp.org">Freecodecamp</a></p>
+            </article>
+            <article class="r-post2">
+                <h2>Resource 2</h2>
+                <p><a href="www.w3schools.com/">W3 Schools</a></p>
+            </article>
+            <article class="r-post3">
+                <h2>Resource 3</h2>
+                <p><a href="https://www.geeksforgeeks.org/">GeeksforGeeks</a></p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <section class="bottom-box">
+            <div class="social-links column">
+                <h2>Socials</h2>
+                <p> <a href="https://www.linkedin.com/company/codeoholics-club-cmrtc/">LinkedIn</a> | <a href="https://www.instagram.com/codeoholics/">Instagram</a> | <a href="https://discord.gg/rbq6gQWx">Discord</a></p>
+            </div>
+        </section>
+        
+        <p>&copy; 2023 Codeoholics</p>
+    </footer>
+
+    <script>
+        // Get references to the clickable sections
+        const rSection1 = document.querySelector('.r-post1');
+        const rSection2 = document.querySelector('.r-post2');
+        const rSection3 = document.querySelector('.r-post3');
+
+    
+        rSection1.addEventListener('click', function () {
+            window.location.href = 'r1.html'; // Replace with the URL of the corresponding page
+        });
+    
+        rSection2.addEventListener('click', function () {
+            window.location.href = 'r2.html'; // Replace with the URL of the corresponding page
+        });
+    
+        rSection3.addEventListener('click', function () {
+            window.location.href = 'r3.html'; // Replace with the URL of the corresponding page
+        });
+    </script>
+
+</body>
+</html>
